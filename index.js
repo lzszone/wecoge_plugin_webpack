@@ -1,6 +1,7 @@
 const installer = async (i, id, getPackages, getDeps) => {
-  const devDeps = ['babel-loader', '@babel/preset-env', '@babel/core', 'webpack', 'webpack-cli'];
-  return id(devDeps)
+  const devDeps = ['webpack', 'babel-loader', '@babel/preset-env', '@babel/core'];
+  return id(['webpack-cli'])
+    .then(() => id(devDeps))
 }
 
 const pkg = {
@@ -24,4 +25,4 @@ const pkg = {
   executor: installer
 }
 
-export default pkg;
+module.exports = pkg;
