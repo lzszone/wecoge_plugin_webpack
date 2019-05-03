@@ -1,5 +1,5 @@
 {
-  "name": "@wecoge/wecoge_plugin_webpack",
+  "name": "@wecoge/webpack",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
